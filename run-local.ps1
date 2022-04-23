@@ -1,0 +1,1 @@
+sam build --beta-features; sam local invoke -n env.json
