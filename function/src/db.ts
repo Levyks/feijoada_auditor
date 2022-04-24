@@ -20,7 +20,8 @@ export async function saveToken(type: TokenType, token: string) {
         TableName: 'tokens',
         Item: {
             type,
-            token
+            token,
+            date: new Date().toISOString()
         }
     }).promise();
 }

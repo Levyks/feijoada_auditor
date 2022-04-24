@@ -8,7 +8,7 @@ Description: >
 # More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
 Globals:
   Function:
-    Timeout: 3
+    Timeout: 30
 
 Resources:
   AuditFeijoadaFunction:
@@ -21,8 +21,8 @@ Resources:
         - x86_64
       Environment:
         Variables:
-            TWITTER_CLIENT_ID: ''
-            TWITTER_CLIENT_SECRET: ''
+          TWITTER_CLIENT_ID: ''
+          TWITTER_CLIENT_SECRET: ''
     Metadata: # Manage esbuild properties
       BuildMethod: esbuild
       BuildProperties:
